@@ -4,7 +4,10 @@ import React from "react";
 
 const Header = ({ hideIcon = false }) => {
   return (
-    <div className="header-wrapper">
+    <div
+      className="header-wrapper"
+      style={{ borderRadius: hideIcon ? "6px" : "0" }}
+    >
       <div className="header-logo">
         {!hideIcon && (
           <>

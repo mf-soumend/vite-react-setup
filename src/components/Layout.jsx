@@ -62,14 +62,14 @@ const DashboardLayout = () => {
           items={items}
         />
       </Sider>
-      <Layout
-        style={{ maxHeight: "100vh", overflowY: "auto", background: "#f5f5f5" }}
-      >
-        <div className="dash-header-wrapper">
-          <Header hideIcon />
-        </div>
-        <div className="dash-content">
-          <Outlet />
+      <Layout>
+        <div className="dash-content-wrapper">
+          <div className="dash-header-wrapper">
+            <Header hideIcon />
+          </div>
+          <div className="dash-content">
+            <Outlet />
+          </div>
         </div>
       </Layout>
     </Layout>

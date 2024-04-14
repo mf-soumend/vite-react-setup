@@ -60,7 +60,7 @@ const LandingPage = () => {
                     </div>
                   }
                   onClick={() => {
-                    navigate("/code-fix");
+                    navigate("/log-fix");
                   }}
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

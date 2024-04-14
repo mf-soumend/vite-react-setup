@@ -1,7 +1,14 @@
 import React from "react";
+import Upload from "../../components/Upload";
 
 const LogFix = () => {
-  return <div>LogFix</div>;
+  return (
+    <>
+      <Upload />
+      <div>LogFix</div>
+      <div>LogFix</div>
+    </>
+  );
 };
 
 export default LogFix;
