@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins-ExtraLight, Poppins-Regular , Poppins-Medium , Poppins Medium, Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  padding: 18px 100px;
+  background: #00658f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo-side-bar {
+  margin: 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 6px;
+}
+.header-logo, .header-logo-side-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+.header-logo img{
+  height: 30px;
+}
+.dash-header-wrapper {
+  margin: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.header-user {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+.hero-img{
+  height: 350px;
+  overflow: hidden;
+}
+.hero-img img {
+  object-fit: cover;
+}
+.hero-text {
+  margin: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.hero-text span{ 
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  color: transparent;
+  font-style: normal;
+}
+.car-items {
+  margin: 12px !important;
+  display: flex !important;
+  gap: 12px;
+  justify-content: center;
+}
+.card-item-cor {
+  cursor: pointer;
+  max-width: 20%;
+}
+.home-card-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.home-card-title span {
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.cor-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+.prev-next-button {
+  color: #00658f;
+  cursor: pointer;
+}
+.footer-text {
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #c7c7c7;
+  color: #00658f;
+}
+
+.dash-content {
+  margin: 0 15px 15px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fff;
+}
