@@ -1,43 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 import "./index.css";
-import {
-  Navigate,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
-import LandingPage from "./pages/landingPage/LandingPage.jsx";
-import Layout from "./components/Layout.jsx";
-import LogFix from "./pages/logFix/LogFix.jsx";
-import DefectFix from "./pages/defectFix/DefectFix.jsx";
-
-const router = createBrowserRouter([
-  {
-    path: "",
-    element: <Layout />,
-    children: [
-      {
-        path: "log-fix",
-        element: <LogFix />,
-      },
-      {
-        path: "defect-fix",
-        element: <DefectFix />,
-      },
-    ],
-  },
-  {
-    path: "/home",
-    element: <LandingPage />,
-  },
-  {
-    path: "/",
-    element: <Navigate replace to="/home" />,
-  },
-]);
+import { Provider } from "react-redux";
+import { store } from "./redux/store.js";
+import { CssBaseline } from "@mui/material";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <CssBaseline />
+      <App />
+    </Provider>
   </React.StrictMode>
 );
